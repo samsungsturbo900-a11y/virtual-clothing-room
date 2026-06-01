@@ -1,84 +1,102 @@
 import { ClothingItem } from '../store/clothingStore'
 
-// Mock images using placeholder service
-const PLACEHOLDER_SHIRT = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Crect width="100" height="100" fill="%234f46e5"%3E%3C/rect%3E%3Ctext x="50" y="50" font-size="12" fill="white" text-anchor="middle" dominant-baseline="middle"%3ECamiseta%3C/text%3E%3C/svg%3E'
-const PLACEHOLDER_PANTS = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Crect width="100" height="100" fill="%233b82f6"%3E%3C/rect%3E%3Ctext x="50" y="50" font-size="12" fill="white" text-anchor="middle" dominant-baseline="middle"%3ECalça%3C/text%3E%3C/svg%3E'
-const PLACEHOLDER_JACKET = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Crect width="100" height="100" fill="%239333ea"%3E%3C/rect%3E%3Ctext x="50" y="50" font-size="12" fill="white" text-anchor="middle" dominant-baseline="middle"%3EJaqueta%3C/text%3E%3C/svg%3E'
-const PLACEHOLDER_DRESS = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Crect width="100" height="100" fill="%23ec4899"%3E%3C/rect%3E%3Ctext x="50" y="50" font-size="12" fill="white" text-anchor="middle" dominant-baseline="middle"%3EVestido%3C/text%3E%3C/svg%3E'
-
 export const CLOTHING_CATALOG: ClothingItem[] = [
-  // Camisetas
   {
     id: 'shirt-1',
     name: 'Camiseta Azul',
     category: 'shirt',
     color: 'Azul',
-    image: PLACEHOLDER_SHIRT,
+    image: 'https://via.placeholder.com/150/0066CC/FFFFFF?text=Camiseta+Azul',
   },
   {
     id: 'shirt-2',
     name: 'Camiseta Vermelha',
     category: 'shirt',
     color: 'Vermelho',
-    image: PLACEHOLDER_SHIRT,
+    image: 'https://via.placeholder.com/150/CC0000/FFFFFF?text=Camiseta+Vermelha',
   },
   {
     id: 'shirt-3',
     name: 'Camiseta Branca',
     category: 'shirt',
     color: 'Branco',
-    image: PLACEHOLDER_SHIRT,
+    image: 'https://via.placeholder.com/150/FFFFFF/000000?text=Camiseta+Branca',
   },
-  // Calças
+  {
+    id: 'shirt-4',
+    name: 'Camiseta Preta',
+    category: 'shirt',
+    color: 'Preto',
+    image: 'https://via.placeholder.com/150/000000/FFFFFF?text=Camiseta+Preta',
+  },
   {
     id: 'pants-1',
     name: 'Calça Jeans',
     category: 'pants',
-    color: 'Azul',
-    image: PLACEHOLDER_PANTS,
+    color: 'Azul Jeans',
+    image: 'https://via.placeholder.com/150/1F3A93/FFFFFF?text=Calça+Jeans',
   },
   {
     id: 'pants-2',
     name: 'Calça Preta',
     category: 'pants',
     color: 'Preto',
-    image: PLACEHOLDER_PANTS,
+    image: 'https://via.placeholder.com/150/000000/FFFFFF?text=Calça+Preta',
   },
   {
     id: 'pants-3',
     name: 'Calça Cinza',
     category: 'pants',
     color: 'Cinza',
-    image: PLACEHOLDER_PANTS,
+    image: 'https://via.placeholder.com/150/808080/FFFFFF?text=Calça+Cinza',
   },
-  // Jaquetas
   {
     id: 'jacket-1',
-    name: 'Jaqueta Couro',
+    name: 'Jaqueta Preta',
     category: 'jacket',
     color: 'Preto',
-    image: PLACEHOLDER_JACKET,
+    image: 'https://via.placeholder.com/150/1A1A1A/FFFFFF?text=Jaqueta+Preta',
   },
   {
     id: 'jacket-2',
-    name: 'Jaqueta Denim',
+    name: 'Jaqueta Marrom',
     category: 'jacket',
-    color: 'Azul',
-    image: PLACEHOLDER_JACKET,
+    color: 'Marrom',
+    image: 'https://via.placeholder.com/150/8B4513/FFFFFF?text=Jaqueta+Marrom',
   },
-  // Vestidos
+  {
+    id: 'jacket-3',
+    name: 'Jaqueta Vermelha',
+    category: 'jacket',
+    color: 'Vermelho',
+    image: 'https://via.placeholder.com/150/CC0000/FFFFFF?text=Jaqueta+Vermelha',
+  },
   {
     id: 'dress-1',
     name: 'Vestido Preto',
     category: 'dress',
     color: 'Preto',
-    image: PLACEHOLDER_DRESS,
+    image: 'https://via.placeholder.com/150/000000/FFFFFF?text=Vestido+Preto',
   },
   {
     id: 'dress-2',
-    name: 'Vestido Floral',
+    name: 'Vestido Vermelho',
     category: 'dress',
-    color: 'Colorido',
-    image: PLACEHOLDER_DRESS,
+    color: 'Vermelho',
+    image: 'https://via.placeholder.com/150/CC0000/FFFFFF?text=Vestido+Vermelho',
+  },
+  {
+    id: 'dress-3',
+    name: 'Vestido Azul',
+    category: 'dress',
+    color: 'Azul',
+    image: 'https://via.placeholder.com/150/0066CC/FFFFFF?text=Vestido+Azul',
+  },
+  {
+    id: 'dress-4',
+    name: 'Vestido Branco',
+    category: 'dress',
+    color: 'Branco',
+    image: 'https://via.placeholder.com/150/FFFFFF/000000?text=Vestido+Branco',
   },
 ]
